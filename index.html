@@ -4,38 +4,56 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
         <title>etch-a-sketch</title>
     </head>
 
     <body>
+        <h2>etch-a-sketch</h2>
         
-            <input type="checkbox" id = "box">
+            
            
-          
+       
         <section id = "main">
             <div id = "options">
-                <div class = "black">black</div>
-                <div class="rainbow">rainbow</div>
-                <div class="eraser">eraser</div>
-                <div class = "clear"></div>
+                <div class = "black"><img  src = "pictures/pen (1).png" ></div><br>
+                <div class="rainbow"><img src = "pictures/rainbow.png"></div><br>
+                <div class="eraser"><img src = "pictures/eraser-tool.png" > </div><br>
+                <div class = "clear"><img src = "pictures/circular-arrow.png"></div><br>
                 <div class = "divider"></div>
                 
                 
-
-                <input type = "color"  class = "colorPick1" >
-                <input type = "color"  class = "background">
                 
-
+               
+                
+                <div id = "colorpick" class = "inp"><input type = "color"  class = "colorPick1" > pen color</div><br>
+              
+                <div id = "contcolor" class = "inp"><input type ="color" class = "containerColor" value = "	#FF0000"> grid-color</div><br>
+             
+                <div  id = "backcolor" class = "inp"><input type = "color"  class = "background" value = "#FFFFFF"> background</div><br>
+                <div id = "checkbtn" class = "inp"><input type="checkbox" id = "box">show grid lines</div> 
+                <!-- <li>grid color</li> -->
                 
                 
             </div>
-            <div id = "container"></div>
-            
-            
-
+            <div class =  "con">
+                <div id = "container"></div>
+                <input type = "range" min = "0" max ="100" id = "slider">
+               
+             </div>
+             
+        
+             
+           
+           
+        
         </section>
-        <input type = "range" min = "0" max ="100" id = "slider">
-
+        
+           
+       
+        
        
 
 
