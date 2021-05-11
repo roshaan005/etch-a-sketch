@@ -1,5 +1,15 @@
 body{
-    background-color: rgb(98, 83, 83);
+    background-image:url("pictures/Black Duck Cloth Canvas Fabric _ Hobby Lobby _ 627208.jpeg");
+   
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+    color:red;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 80px;
+
 }
 
 #container{
@@ -9,10 +19,11 @@ body{
     border:2px solid red;
     display:grid;
     margin:auto;
-    margin-top: 70px;
- 
    
-  }
+}
+   
+ 
+
 
 .grid-el{
     background-color:white;
@@ -20,70 +31,169 @@ body{
 
 
 #options{
-    background-color: rgb(197, 31, 31);
+    background-image:url("pictures/Black Duck Cloth Canvas Fabric _ Hobby Lobby _ 627208.jpeg");
     width:250px;
-    height:600px;
+    height:450px;
+   margin-bottom: 200px;
    
 }
 #main{
     display:flex;
-    
     width:800px;
     height:600px;
     margin:auto;
     align-items: center;
-    margin-top:55px;
+    
 }
 .black{
-    width:250px;
+    width:150px;
     height:60px;
-    background-color:black;
+    background-image:url("pictures/Black Duck Cloth Canvas Fabric _ Hobby Lobby _ 627208.jpeg");
     margin:auto;
+   
+    outline-style: ridge;
+    outline-color: crimson;
+
+    
   
 }
 .black:hover{
     outline-color:yellow;
     outline-style:ridge;
-    width:250px;
+    
 
 }
 .rainbow:hover{
-    outline-color:yellow;
+    outline-color:palegreen;
     outline-style:ridge;
-    width:250px;
+    
 }
 .rainbow{
-    width:250px;
+    
     height:60px;
-    background-color: blanchedalmond;
+    
     margin:auto;
+    width:150px;
+  
+    outline-style: ridge;
+    outline-color: crimson;
+
+   
 }
 .eraser{
     margin:auto;
-    width:250px;
+    width:150px;
     height:60px;
-    background-color: rgb(228, 20, 193);
+   
+   
+    outline-style: ridge;
+    outline-color: crimson;
 
 
 }
 .eraser:hover{
-    outline-color:yellow;
+    outline-color:greenyellow;
     outline-style:ridge;
-    width:250px;
+   
 
 }
 .colorPick1{
-    width:245px;
-    height:60px;
-    margin-top:25px;
+    width:50px;
+    height:55px;
+   
+    
+   
 }
+
+.background{
+    width:50px;
+    height:55px;
+
+}
+.containerColor{
+    width:50px;
+    height:55px;
+
+
+}
+
+    
+
+li{
+    color: blue;
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+
 .divider{
-    width:100%;
-    height:20px;
-    background-color: black;
+    width:90%;
+    height:2px;
+   
 }
 .clear{
-    width:250px;
+    width:150px;
     height:60px;
-    background-color: blue;
+   
+    
+    margin:auto;
+    outline-style: ridge;
+    outline-color: crimson;
+}
+.clear:hover{
+    outline-color: yellow;
+}
+#slider{
+   margin-left: 130px;
+   margin-top: 30px;
+   -webkit-appearance: none;
+   height:2px;
+   background: red ;
+    
+    width:250px;
+}
+#box{
+   margin-top:20px;
+   
+   width:30px;
+   height:30px;
+   
+}
+p{
+    margin-top: 30px;
+    color:red;
+   
+}
+img{
+    width:40px;
+    height:40px;
+    margin-left: 50px;
+    margin-top:10px;
+   
+
+}
+.inp{
+    width:150px;
+    height:60px;
+    
+    color:red;
+    
+    outline-style: ridge;
+    outline-color: crimson;
+    margin:auto;
+
+}
+
+#colorpick:hover{
+    outline-color: rgb(29, 226, 177);
+
+}
+#contcolor:hover{
+    outline-color: rgb(196, 128, 236);
+}
+#backcolor:hover{
+    outline-color: powderblue;
+}
+#checkbtn:hover{
+    outline-color: rgb(203, 238, 122);
 }
