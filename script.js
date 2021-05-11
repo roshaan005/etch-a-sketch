@@ -4,6 +4,9 @@ let container = document.getElementById("container")
 let sec = document.querySelector("section")
 let btn = document.getElementById("box")
 let slider = document.getElementById("slider")
+let div = document.getElementsByClassName("grid-el")
+let  boxes = container.querySelectorAll(".grid-el")
+
 // grid lines visibility 
 
 btn.addEventListener("click",showGridLines)
@@ -99,6 +102,7 @@ function colorSelect(e){
                     boxes.forEach(div=> {
                        div.style.backgroundColor = back 
 
+
                     
                 });
 
@@ -107,19 +111,47 @@ function colorSelect(e){
             
             
             }
+
+        }else if(e.target.classList.contains("clear")){
+           
+            div = document.getElementsByClassName("grid-el")
+            boxes = container.querySelectorAll(".grid-el")
+            boxes.forEach(div=> {
+                div.style.backgroundColor = background.firstElementChild.value 
+                
+
+             
+         });
+
+                     
+        }else if (e.target.classList.contains("containerColor")){
+            e.target.addEventListener("input",gridColor)
+            function gridColor(e){
+                container.style.backgroundColor = e.target.value
+
+            }
+
+            
         }
+    
+
+        
 
 
 }
 
-  // custom color select 
+
 let panel = sec.childNodes
+
 panelChildren = panel[1].children
-colorPick = panelChildren[5]
-background = panelChildren[6]
-clear = panelChildren[3]
+console.log(panelChildren)
+colorPick = panelChildren[9]
+background = panelChildren[13]
+console.log(background.firstElementChild)
 
+containerColor = panelChildren[7]
 
+// custom color button
 colorPick.addEventListener("input", colorOfChoice)
 
 function colorOfChoice(e){
